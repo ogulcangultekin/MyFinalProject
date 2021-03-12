@@ -5,9 +5,9 @@ using System.Text;
 
 namespace Core.Utilities.Security.Encryption
 {
-    public class SigningCredentialHelper
+    public class SigningCredentialsHelper
     {
-        public static SigningCredentials CreateSigningCredentdials(SecurityKey securityKey)
+        public static SigningCredentials CreateSigningCredentials(SecurityKey securityKey)
         {
             return new SigningCredentials(securityKey,SecurityAlgorithms.HmacSha512Signature);
         }
